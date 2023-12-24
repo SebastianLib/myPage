@@ -5,8 +5,9 @@ import third from "../assets/third.jpg";
 
 const About = () => {
   return (
-    <div className="min-h-screen container mx-auto px-6 md:px-2">
-      <h2 className="text-center mt-16 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-normal">
+    <section className="">
+<div className="min-h-screen container mx-auto px-6 md:px-2">
+      <h2 className="text-center pt-16 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-normal">
         Dlaczego Wybrać{" "}
         <span className="bg-red-600 text-white px-4">Mnie?</span>
       </h2>
@@ -77,6 +78,10 @@ const About = () => {
         </div>
       </div>
     </div>
+  
+
+    </section>
+  
   );
 };
 

@@ -3,6 +3,9 @@ import Navbar from './components/Navbar'
 import MobileNavbar from './components/MobileNavbar'
 import { useState } from "react";
 import About from "./sections/About";
+import Offer from "./sections/Offer";
+import Footer from "./sections/Footer";
+import Contact from "./sections/Contact";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +16,9 @@ function App() {
       <MobileNavbar setIsOpen={setIsOpen} isOpen={isOpen} />
     <Hero/>
     <About/>
+    <Offer/>
+    <Contact/>
+    <Footer/>
     </div>
   )
 }
