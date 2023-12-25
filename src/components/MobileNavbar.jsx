@@ -1,4 +1,5 @@
 import {AiOutlineClose} from 'react-icons/ai'
+import { Link } from 'react-scroll';
 
 const MobileNavbar = ({ isOpen, setIsOpen }) => {
   return (
@@ -8,18 +9,42 @@ const MobileNavbar = ({ isOpen, setIsOpen }) => {
       }`}
     >
       <ul className="text-center flex flex-col gap-6 w-full">
-        <li onClick={() => setIsOpen(false)} className="text-xl font-semibold cursor-pointer">
-          Strona główna
-        </li>
-        <li onClick={() => setIsOpen(false)} className="text-xl font-semibold cursor-pointer">
-          O mnie
-        </li>
-        <li onClick={() => setIsOpen(false)} className="text-xl font-semibold cursor-pointer">
-          Oferta
-        </li>
-        <li onClick={() => setIsOpen(false)} className="text-xl font-semibold cursor-pointer">
-          Kontakt
-        </li>
+        <Link
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <li onClick={() => setIsOpen(false)}  className="navLi text-xl">Strona główna</li>
+          </Link>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <li onClick={() => setIsOpen(false)}  className="navLi text-xl">O mnie</li>
+          </Link>
+          <Link
+            to="offer"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <li onClick={() => setIsOpen(false)}  className="navLi text-xl">Oferta</li>
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <li onClick={() => setIsOpen(false)} className="navLi text-xl">Kontakt</li>
+          </Link>
       </ul>
       <AiOutlineClose onClick={() => setIsOpen(false)} className='absolute top-8 right-4 text-3xl cursor-pointer'/>
     </div>

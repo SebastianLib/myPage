@@ -22,12 +22,12 @@ const Navbar = ({ setIsOpen }) => {
   });
 
   return (
-    <nav
+    <header
       className={`fixed transition-all duration-300 top-0 w-full z-30 ${
         background ? "bg-red-700/95" : "bg-transparent"
       } `}
     >
-      <div className="flex items-center justify-between relative z-20 py-3 text-white mx-2 sm:mx-4 md:mx-8 lg:mx-20">
+      <nav className="flex items-center justify-between relative z-20 py-3 text-white mx-2 sm:mx-4 md:mx-8 lg:mx-20">
         {/* <h1 className="text-4xl md:text-5xl font-bold">Seli<span className="text-red-600">Code</span></h1> */}
         {/* <img src={whiteLogo} alt="" className="w-16 lg:w-24"/> */}
 
@@ -151,8 +151,8 @@ const Navbar = ({ setIsOpen }) => {
           onClick={() => setIsOpen(true)}
           className="flex md:hidden text-3xl hover:text-red-600 transition-colors duration-300"
         />
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 
