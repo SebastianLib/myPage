@@ -5,7 +5,7 @@ import third from "../assets/third.jpg";
 
 const About = () => {
   return (
-    <section className="">
+  <section id="about">
 <div className="min-h-screen container mx-auto px-6 md:px-2">
       <h2 className="text-center pt-16 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-normal">
         Dlaczego Wybrać{" "}

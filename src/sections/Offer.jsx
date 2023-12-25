@@ -6,14 +6,14 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Offer = () => {
   return (
-    <section className="bg-gray-50 min-h-screen">
+    <section id="offer" className="bg-gray-50 min-h-screen">
     <div className="py-10">
       <h2 className="text-center mt-16 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-normal">
       <span className="bg-red-600 text-white px-4">Etapy</span>
       {" "}Współpracy
       </h2>
 
-      <VerticalTimeline className="my-24" lineColor="rgb(239 68 68)" animate={true}>
+      <VerticalTimeline className="my-24 scale-90" lineColor="rgb(239 68 68)" animate={true}>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           iconStyle={{
