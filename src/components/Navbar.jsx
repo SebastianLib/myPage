@@ -121,7 +121,9 @@ const Navbar = ({ setIsOpen }) => {
             offset={-50}
             duration={500}
           >
-            <li className="navLi">O mnie</li>
+            <li className="navLi">
+            O mnie
+            </li>
           </Link>
           <Link
             activeClass="active"

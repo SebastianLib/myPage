@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <div className="h-screen relative bg-[url('assets/xdd.PNG')] bg-cover flex justify-center items-center">
+    <header id="hero">
+      <div className="h-screen relative bg-fixed bg-[url('assets/xdd.PNG')] bg-cover flex justify-center items-center">
         <div className="z-20 text-white text-center">
           <motion.div
             initial={{ opacity: 0 }}
@@ -64,7 +64,7 @@ const Hero = () => {
 
         <div className="absolute inset-0 bg-black/80"></div>
       </div>
-    </section>
+    </header>
   );
 };
 

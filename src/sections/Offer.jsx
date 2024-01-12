@@ -3,6 +3,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import Services from "../components/Services";
 
 const Offer = () => {
   return (
@@ -86,6 +87,7 @@ const Offer = () => {
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
+    <Services/>
     </section>
   );
 };

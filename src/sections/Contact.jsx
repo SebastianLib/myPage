@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { FaPhone } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import toast from "react-hot-toast";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const form = useRef();
@@ -35,7 +36,13 @@ const Contact = () => {
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
         <div className="h-[50%] bg-gray-50"></div>
-        <div className="bg-white rounded-xl shadow-xl top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] absolute w-full py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="bg-white rounded-xl shadow-xl top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] absolute w-full py-8 lg:py-16 px-4 mx-auto max-w-screen-md"
+        >
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 ">
             Skontaktuj się ze mną
           </h2>
@@ -94,7 +101,7 @@ const Contact = () => {
               Wyślij wiadomość
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
 
       <div className="flex max-w-lg mx-auto justify-between items-center pb-12 flex-wrap">
