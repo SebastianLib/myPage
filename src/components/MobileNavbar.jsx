@@ -3,24 +3,24 @@ import { Link } from 'react-scroll';
 
 const MobileNavbar = ({ isOpen, setIsOpen }) => {
 
-  const links = [
-    {
-      label: "strona główna",
-      href: "#hero"
-    },
-    {
-      label: "O mnie",
-      href: "#about"
-    },
-    {
-      label: "Oferta",
-      href: "#offer"
-    },
-    {
-      label: "Kontakt",
-      href: "#contact"
-    },
-  ]
+  // const links = [
+  //   {
+  //     label: "strona główna",
+  //     href: "#hero"
+  //   },
+  //   {
+  //     label: "O mnie",
+  //     href: "#about"
+  //   },
+  //   {
+  //     label: "Oferta",
+  //     href: "#offer"
+  //   },
+  //   {
+  //     label: "Kontakt",
+  //     href: "#contact"
+  //   },
+  // ]
 
   return (
     <div
@@ -65,9 +65,6 @@ const MobileNavbar = ({ isOpen, setIsOpen }) => {
           >
             <li onClick={() => setIsOpen(false)} className="navLi text-xl">Kontakt</li>
           </Link>
-          {links.map(link =>(
-            <li key={link.label} onClick={() => setIsOpen(false)} className='navLi text-xl'><a href={link.href}>{link.label}</a></li>
-          ))}
       </ul>
       <AiOutlineClose onClick={() => setIsOpen(false)} className='absolute top-8 right-4 text-3xl cursor-pointer'/>
     </div>

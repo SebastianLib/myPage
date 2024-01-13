@@ -4,33 +4,33 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <header id="hero">
-      <div className="h-screen relative bg-fixed bg-[url('assets/xdd.PNG')] bg-cover flex justify-center items-center">
-        <div className="z-20 text-white text-center">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 2 }}
-          >
-            <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold">
-              Tworzę Strony
-            </h1>
-            <div className="flex items-center justify-center">
-              <TypeAnimation
-                sequence={[
-                  "Które Wyróżnią Twój Biznes!",
-                  3000,
-                  "Które Zwiększą Twoją Sprzedaż!",
-                  3000,
-                ]}
-                wrapper="span"
-                speed={150}
-                className="text-2xl md:text-3xl lg:text-5xl mt-4 text-red-500 font-semibold"
-                style={{ display: "flex" }}
-                repeat={Infinity}
-              />
-            </div>
-          </motion.div>
+    <main id="hero">
+    <div className="h-screen relative bg-fixed bg-[url('assets/xdd.PNG')] bg-cover flex justify-center items-center">
+      <div className="z-20 text-white text-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+        >
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold">
+            Tworzę Strony
+          </h1>
+          <div className="flex items-center justify-center">
+            <TypeAnimation
+              sequence={[
+                "Które Wyróżnią Twój Biznes!",
+                3000,
+                "Które Zwiększą Twoją Sprzedaż!",
+                3000,
+              ]}
+              wrapper="span"
+              speed={150}
+              className="text-2xl md:text-3xl lg:text-5xl mt-4 text-red-500 font-semibold"
+              style={{ display: "flex" }}
+              repeat={Infinity}
+            />
+          </div>
+        </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -64,7 +64,7 @@ const Hero = () => {
 
         <div className="absolute inset-0 bg-black/80"></div>
       </div>
-    </header>
+    </main>
   );
 };
 
