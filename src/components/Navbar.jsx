@@ -110,7 +110,8 @@ const Navbar = ({ setIsOpen }) => {
             offset={-50}
             duration={500}
           >
-            <li className="navLi">Strona główna</li>
+            
+            <li className="navLi"><a href="#hero">Strona główna</a></li>
           </Link>
           <Link
             activeClass="active"
@@ -122,7 +123,7 @@ const Navbar = ({ setIsOpen }) => {
             duration={500}
           >
             <li className="navLi">
-            O mnie
+            <a href="#about">O mnie</a>
             </li>
           </Link>
           <Link
@@ -134,7 +135,7 @@ const Navbar = ({ setIsOpen }) => {
             offset={-50}
             duration={500}
           >
-            <li className="navLi">Oferta</li>
+            <li className="navLi"><a href="#offer">Oferta</a></li>
           </Link>
           <Link
             activeClass="active"
@@ -145,7 +146,7 @@ const Navbar = ({ setIsOpen }) => {
             offset={-50}
             duration={500}
           >
-            <li className="navLi">Kontakt</li>
+            <li className="navLi"><a href="#contact">Kontakt</a></li>
           </Link>
         </ul>
 

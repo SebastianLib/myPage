@@ -7,14 +7,14 @@ const Hero = () => {
     <main id="hero">
     <div className="h-screen relative bg-fixed bg-[url('assets/xdd.PNG')] bg-cover flex justify-center items-center">
       <div className="z-20 text-white text-center">
+      <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold">
+            Tworzę Strony
+      </h1>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ ease: "easeOut", duration: 2 }}
         >
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold">
-            Tworzę Strony
-          </h1>
           <div className="flex items-center justify-center">
             <TypeAnimation
               sequence={[
